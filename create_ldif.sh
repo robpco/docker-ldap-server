@@ -1,8 +1,8 @@
 # This reads in the ldif_feed.yaml file and spits out all the necessary
-# LDIF files to bootstrap the LDAP system.  
+# LDIF files to bootstrap the LDAP system.
 # Runs in a Docker container so you don't have to worry about dependencies
 
-DOCKER_IMAGE=grovemountain/ldap_ldif_builder:latest
+DOCKER_IMAGE=robpco/ldap_ldif_builder:latest
 LDIF_FEED=${LDIF_FILE:-"ldif_feed.yaml"}
 
 echo "Pulling Docker Image"
